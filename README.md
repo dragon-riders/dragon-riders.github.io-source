@@ -1,3 +1,28 @@
+# How to build it - Dragon Riders
+Add this into .bashrc/.zshrc:
+```
+export JEKYLL_VERSION=latest
+alias jekyll='docker run --rm \
+  -p 35729:35729 -p 4000:4000 \
+  --volume="$PWD:/srv/jekyll" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle" \
+  -it jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll'
+```
+Docker jekyll image is used to build the site.
+- clone this repo and cd into this repo dir
+- ```jekyll build```
+- Serve site on localhost port 4000:
+  ```jekyll serve --incremental --watch```
+
+- after every change, build new site
+- when done, push _site/* content into dragon-riders.github.io repo
+
+
+
+
+
+
 # { Personal } Jekyll Theme
 ![Build Status](https://travis-ci.org/le4ker/personal-jekyll-theme.svg?branch=master)
 ![license](https://img.shields.io/badge/license-MIT-blue.svg?link=https://github.com/dono-app/ios/blob/master/LICENSE)
