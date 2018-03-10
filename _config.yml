@@ -3,7 +3,7 @@
 
 # NB! Set your site's url, otherwise stuff will break :)
 
-url: "https://le4ker.github.io"
+url: "https://dragon-riders.github.io"
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (https://yourusername.github.io/repository-name)
@@ -12,7 +12,8 @@ url: "https://le4ker.github.io"
 #
 # NB! Without this *nothing* will work, because it's used in every path :)
 
-baseurl: /personal-jekyll-theme
+# baseurl: /personal-jekyll-theme
+baseurl: ""
 
 # Google tracking id
 
@@ -29,10 +30,10 @@ force-https: True
 #############
 
 lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
+author: "patchkez, komodo.rocks"
+title: "{ DRAGON RIDERS }"
+description: "Dragon Riders - Notary Node DevOps"
+keywords: "komodo, dragon riders, notary node, dpow, bitcoin"
 favicon: "/img/favicon.ico"
 
 ################
@@ -55,10 +56,16 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "The lower you fall, the higher you'll fly."
-  - text: "Where’s your will to be weird?"
+#  - text: Dragon Riders - Team of Komodo Notary Node Candidates
+  - text: Notary Node DevOps
+#  - text: Experienced Linux administrator
+#  - text: Open Source enthusiast
 
-me-img: "/img/jetpacktocat.png"
+#  - text: "The lower you fall, the higher you'll fly."
+#  - text: "Where’s your will to be weird?"
+
+# me-img: "/img/jetpacktocat.png"
+me-img: "/img/jetpacktocat.svg"
 
 # To use facebook profile pic comment the previous line and uncomment the following
 # line, and replace 'user_id' with your facebook user id.
@@ -122,7 +129,7 @@ pinterest-share: True
 pocket-share: True
 vkontakte-share: True
 
-disqus-shortname: "panossakkos"
+#disqus-shortname: "panossakkos"
 
 syntax-highlight: True
 
@@ -146,7 +153,7 @@ timeline-img: "/img/timeline/default.png"
 # Contact #
 ###########
 
-email: "your@email.here"
+#email: "your@email.here"
 
 ################
 # Author Blurb #
@@ -156,7 +163,7 @@ email: "your@email.here"
 # This works best when your author blurb image has a transparent background, or matches your site background color.
 
 # if the author_blurb is not set, then this feature is skipped
-author_blurb: "John Smith is an awesome person. He lives in Flatland, where he works on two-dimensional engineering projects. In his spare time, John likes to eat cotton candy."
+author_blurb: "Team of experienced engineers who would like to improve Komodo Platform."
 author_blurb_image: "/img/author.png"
 
 ##################
@@ -164,16 +171,18 @@ author_blurb_image: "/img/author.png"
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/"
-  - title: "twitter"
-    url: "https://twitter.com/"
-  - title: "github"
-    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
-  - title: "bitcoin"
-    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
-  - title: "rss"
-    url: "/feed.xml"
+#  - title: "github"
+#    url: "https://dragon-riders/dragon-riders"
+#  - title: "facebook"
+#    url: "https://facebook.com/"
+#  - title: "twitter"
+#    url: "https://twitter.com/"
+#  - title: "github"
+#    url: "https://github.com/PanosSakkos/personal-jekyll-theme"
+#  - title: "bitcoin"
+#    url: "https://blockchain.info/address/1LHuKC9Em3KA5yoZaf7nngnNdf9K7s2gSi"
+#  - title: "rss"
+#    url: "/feed.xml"
 
 ############
 # 404 page #
@@ -185,9 +194,9 @@ err-404-img: "/img/labtocat.png"
 # GPG on Keybase #
 ##################
 
-keybase-username: johnsmith
-keybase-in-social: True
-keybase-in-footer: True
+#keybase-username: patchkez
+#keybase-in-social: True
+#keybase-in-footer: True
 
 ################################################################################
 
@@ -197,13 +206,20 @@ keybase-in-footer: True
 
 pages_list:
   About: 'about'
-  Blog: 'latest-post'
-  Timeline: 'timeline'
-  Contact: 'contact'
+  # Motivation: 'motivation'
+  Community: 'community'
+  Work: 'current_work'
+  Solution: 'pros_solution'
+  # Hardware: 'hardware'
+#  Blog: 'latest-post'
+#  Timeline: 'timeline'
+  Vote: 'vote'
+  # Contact: 'contact'
+  # Test: 'test'
 
 # Exclusion list from the generated _site
 
-exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts"]
+exclude: ["LICENSE", "README.md", "CONTRIBUTING", "CONTRIBUTORS", "scripts", "vendor"]
 
 # Pagination path
 
@@ -214,6 +230,7 @@ paginate_path: "blog/page:num/"
 sass:
   style: compressed
 
-gems:
+# gems:
+plugins:
   - jekyll-paginate
   - jemoji
